@@ -1,0 +1,27 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write \"*.js\" \"*.html\" \"*.css\"",
+    "format:check": "prettier --check \"*.js\" \"*.html\" \"*.css\"",
+    "lint": "eslint \"*.js\"",
+    "lint:fix": "eslint \"*.js\" --fix",
+    "quality:check": "./format-check.sh",
+    "quality:fix": "npm run format && npm run lint:fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@eslint/js": "^9.32.0",
+    "eslint": "^9.32.0",
+    "prettier": "^3.6.2"
+  }
+}
